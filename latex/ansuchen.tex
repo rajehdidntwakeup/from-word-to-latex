@@ -1,0 +1,97 @@
+% ansuchen.tex — LaTeX replica of "01_Ansuchen Zuteilung wiss Arbeit.docx"
+% FH-Burgenland form LE0400_DEPI_V_01 (PQMS, v1.1, 19.11.2024)
+% Build:  cd latex && xelatex ansuchen.tex && xelatex ansuchen.tex
+%         (two runs needed for \pageref{LastPage})
+% Fonts:  re-extract first with  python3 scripts/extract_fonts.py
+\documentclass[a4paper]{article}
+
+% ---------- Page geometry (PLAN.md §2) ----------
+% A4; Word pgMar: top 4.44cm, bottom 2.25cm, left/right 2.2cm.
+% footskip positions the footer block so its last baseline lands at
+% Word's footer distance (1.19cm from the page bottom).
+\usepackage[a4paper,
+  top=4.44cm, bottom=2.25cm, left=2.2cm, right=2.2cm,
+  footskip=22.54pt, headheight=12pt, headsep=1.25cm]{geometry}
+
+% ---------- Fonts (extracted from the docx, PLAN.md §0) ----------
+\usepackage{fontspec}
+\setmainfont{Tahoma}[Path = fonts/, Extension = .ttf,
+  UprightFont = *-Regular, BoldFont = *-Bold]
+\newfontfamily\msgothic{MSGothic}[Path = fonts/, Extension = .ttf,
+  UprightFont = *-Regular]              % ballot box U+2610 (Phase 2+)
+
+% ---------- Colour / graphics ----------
+\usepackage{xcolor}
+\definecolor{footergrey}{HTML}{808080}
+\usepackage{graphicx}
+\usepackage{eso-pic}                    % page-anchored logo on every page
+
+% ---------- Tables (Phase 2+) ----------
+\usepackage{array}
+\setlength{\tabcolsep}{5.4pt}           % Word default cell side padding 0.19cm
+\newcommand{\cbx}{\msgothic\char"2610}   % MS Gothic ballot box, 10pt context
+\newcommand{\TWr}{\noalign{\hrule height 1.5pt}} % thick rule (outer borders)
+\newcommand{\tnr}{\noalign{\hrule height 0.5pt}} % thin rule (inner borders)
+
+% ---------- Footer (PLAN.md §4) — absolute placement ----------
+% fancyhdr v4 auto-increases \footskip to fit a 4-line footer, which pins the
+% block too low; we bypass it entirely and anchor the tabular at exact page
+% coordinates via eso-pic. Baselines measured from the reference render:
+% rows at y = 783.7 / 791.0 / 798.2 / 805.5 pt from the page top
+% (7.27pt pitch); left edge 2.2cm; right edge ends at 530.1pt.
+\usepackage{lastpage}
+\pagestyle{empty}
+% 4 lines, Tahoma 6pt on a 7.3pt pitch, #808080; lines 1-2 bold.
+% Column stops from the left margin: 0 / 6.86cm / right edge at 16.50cm.
+\newcommand{\ftrstyle}{\fontsize{6}{7.3}\selectfont\color{footergrey}}
+\newcommand{\footerblock}{\ftrstyle
+  \setlength{\tabcolsep}{0pt}%
+  \begin{tabular}[b]{@{}p{6.86cm}p{5.24cm}>{\raggedleft\arraybackslash}p{4.40cm}@{}}
+    & & \bfseries\thepage/\pageref{LastPage}\\
+    \bfseries LE0400\_DEPI\_V\_01 Ansuchen Zuteilung wiss Arbeit & & \bfseries PQMS\\
+    KP01 – Studium \& Lehre & & Version 1.1 - zuletzt geändert: 19.11.2024/hos\\
+    erstellt: 09.03.2022/frn & geprüft: 09.03.2022/buc & freigegeben: 19.11.2024/buc\\
+  \end{tabular}}
+\AddToShipoutPictureBG{%
+  \AtPageLowerLeft{\put(\LenToUnit{2.2cm},\LenToUnit{36.39pt}){%
+    \makebox[0pt][l]{\footerblock}}}}
+
+% ---------- Floating logo, repeats on every page (PLAN.md §2) ----------
+% Visible logo bbox in the reference render: x=2.18cm, y=1.62cm from the
+% page top-left; 4.82 x 1.75cm (aspect 2.749).
+% Placed bottom-up:  29.7 - 1.62 - 1.75 = 26.33cm above the page bottom.
+\AddToShipoutPictureBG{%
+  \AtPageLowerLeft{\put(\LenToUnit{2.18cm},\LenToUnit{26.33cm}){%
+    \includegraphics[width=4.82cm]{assets/fh-logo.png}}}}
+
+% ---------- Text block defaults ----------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+% Word line metrics (PLAN.md §2): body p0/p1 use line=23 atLeast (natural
+% Tahoma line); body p10/p11 use line=276 auto (1.15 x single).
+\newcommand{\titlestyle}{\fontsize{12}{14.45}\selectfont}   % natural Tahoma 12pt
+\newcommand{\titlestyleii}{\fontsize{12}{16.62}\selectfont} % 1.15 x 14.45
+\newcommand{\bodystyle}{\fontsize{10}{12.07}\selectfont}    % natural Tahoma 10pt
+\newcommand{\bodystyleii}{\fontsize{10}{13.88}\selectfont}  % 1.15 x 12.07
+
+\begin{document}
+
+% ===== Title block (body p0-p1; reference y=125.9 / 146.0) =====
+{\bfseries\titlestyle Ansuchen um Zuteilung einer wissenschaftlichen Arbeit\par}
+\vspace{6pt}
+{\bodystyle Department Informationstechnologie\par}
+
+% TODO(Phase 2): T0 degree picker — top rule at y=164.8pt
+% TODO(Phase 3): T1 student data, T2 Arbeitstitel/Themenquelle, T3 Genehmigung
+
+\newpage
+
+% ===== Page 2: Themendisposition (reference y=151.9 / 175.0) =====
+\vspace*{11.5pt}
+{\bfseries\titlestyleii Themendisposition\par}
+\vspace{6pt}
+{\bodystyleii Ausführliche Darstellung der eingereichten Fragestellung (2-3 Seiten)\par}
+
+% TODO(Phase 4): T4 Themendisposition rows (66.15pt pitch)
+
+\end{document}
