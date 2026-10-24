@@ -344,5 +344,9 @@ from-word-to-latex/
       (0/94 words beyond 2pt, worst 0.76pt; rules within ±0.24pt; shipout-layer
       absolute placement, bp units, baseline-aware qa_diff)
 - [ ] Phase 3 — T2 (indents, checkboxes, inline footnote) + T3 (merges)
+      ✅ DONE: 0/172 words beyond 2pt; all T2/T3 rules at +0.00pt ink-delta;
+      T3 row-1 divider (204.35) + Unterschrift divider (297.47) only span
+      their rows (merged-cell geometry); anchor fixed to true -125.95 Word
+      top margin; superscript ¹ placed at 5.79bp explicit font size
 - [ ] Phase 4 — page-2 headings + T4 fixed-pitch rows
 - [ ] Phase 5 — full QA loop (bbox + pixel diff), fix deviations, final report
