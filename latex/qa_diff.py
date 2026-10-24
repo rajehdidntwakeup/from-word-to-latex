@@ -11,8 +11,11 @@ baselines match exactly. This tool converts every word box to its text
 BASELINE via k-factors (k = ascent / (ascent + descent), empirically
 validated against 300dpi ink) and compares baselines + pen origins (xMin).
 
-k-factors:
-  Tahoma     reference 0.8291    candidate (XeTeX) 0.7409
+k-factors (k = ascent / (ascent + descent), derived from 300dpi ink
+measurements — see _inspect/k_truth.py; box height varies with each
+word's ascender mix, so k is an approximation per renderer):
+
+  Tahoma     reference 0.8291    candidate (XeTeX) 0.7878
   MS Gothic (ballot box, both)    0.8594
 
 Usage:
@@ -29,7 +32,7 @@ PAGE_RE = re.compile(
     r'<page width="([\d.]+)" height="([\d.]+)">(.*?)</page>', re.S)
 
 K_REF = 0.8291     # Tahoma, LibreOffice reference render
-K_MINE = 0.7409    # Tahoma, XeTeX build
+K_MINE = 0.7878    # Tahoma, XeTeX build (derived from 300dpi ink truth)
 K_GOTHIC = 0.8594  # MS Gothic ballot box, both renders
 
 BOX = "\u2610"

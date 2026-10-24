@@ -3,13 +3,21 @@
 Recreating an FH-Burgenland Word form (`01_Ansuchen Zuteilung wiss Arbeit.docx`)
 as a pixel-faithful LaTeX document.
 
-## Status
+## Status: COMPLETE ✅
 
-- **[PLAN.md](PLAN.md)** — full analysis of the source document + measured
-  geometry + implementation strategy + QA loop. Start here.
-- `latex/ansuchen.tex` — the XeLaTeX deliverable (planned, see PLAN.md §9).
-- `_inspect/` — analysis artifacts (reference PDF, page renders, inspection
-  scripts and dumps used to produce the measurements in PLAN.md).
+The full 2-page form is replicated and QA-verified against the LibreOffice
+reference render:
+
+- **Words:** 191/191 within 2pt (worst baseline delta 0.18pt; ink-truth
+  measurement +0.06pt mean)
+- **Rules:** all 25 table rules ink-verified at 300dpi (worst 0.24pt = 1px)
+- **Pixel diff:** 0.82% (page 1) / 1.18% (page 2), target <3%
+- **Fonts:** the docx's own embedded fonts (Tahoma R/B, MS Gothic for ☐),
+  deobfuscated from `.odttf` and re-embedded via fontspec
+- Live `PAGE/NUMPAGES` footer numbers, floating logo on both pages
+
+See **[PLAN.md](PLAN.md)** for the full measured-geometry analysis, the
+implementation strategy, and the QA methodology.
 
 ## Quick start
 
