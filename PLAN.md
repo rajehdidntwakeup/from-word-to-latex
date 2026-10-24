@@ -332,9 +332,10 @@ from-word-to-latex/
   deterministic and matches the footer/logo mechanism.
 - **A `\put` outside a picture environment silently typesets nothing**
   (no log error). Always wrap content macros in `\AtPageUpperLeft{…}`.
-- **Frame anchor** (shipout layer, bp): origin = (63, −126.40) from the page
-  top-left — 63 = left rule center x; 125.95 = Word top margin, +0.45
-  empirical correction.
+- **Frame anchor** (shipout layer, bp): origin = (63, −125.95) from the page
+  top-left — 63 = left rule center x; −125.95 = Word top margin exactly.
+  (An earlier +0.45pt "correction" was a pt-era artifact; ink-truth
+  calibration proved the bare margin was correct all along.)
 
 ## 9. Execution checklist
 
@@ -343,18 +344,18 @@ from-word-to-latex/
 - [x] Phase 2 — T0 + T1 with exact columns/heights; QA pass on their region
       (0/94 words beyond 2pt, worst 0.76pt; rules within ±0.24pt; shipout-layer
       absolute placement, bp units, baseline-aware qa_diff)
-- [ ] Phase 3 — T2 (indents, checkboxes, inline footnote) + T3 (merges)
-      ✅ DONE: 0/172 words beyond 2pt; all T2/T3 rules at +0.00pt ink-delta;
+- [x] Phase 3 — T2 (indents, checkboxes, inline footnote) + T3 (merges)
+      DONE: 0/172 words beyond 2pt; all T2/T3 rules at +0.00pt ink-delta;
       T3 row-1 divider (204.35) + Unterschrift divider (297.47) only span
       their rows (merged-cell geometry); anchor fixed to true -125.95 Word
       top margin; superscript ¹ placed at 5.79bp explicit font size
-- [ ] Phase 4 — page-2 headings + T4 fixed-pitch rows
-      ✅ DONE: page-2 headings at measured depths (38.50/59.15); T4 = 9
+- [x] Phase 4 — page-2 headings + T4 fixed-pitch rows
+      DONE: page-2 headings at measured depths (38.50/59.15); T4 = 9
       rules of 0.5pt (plain Table Grid style, NO tblBorders override — unlike
       T0-T3's 1.5pt frames) on an exact 66.10pt grid starting 69.40; 8 bold
       labels at x=5.10, depths 85.55+i*66.10; side borders 0.5pt
-- [ ] Phase 5 — full QA loop (bbox + pixel diff), fix deviations, final report
-      ✅ DONE (see current status below): qa_diff --strict PASS (191/191
+- [x] Phase 5 — full QA loop (bbox + pixel diff), fix deviations, final report
+      DONE: qa_diff --strict PASS (191/191
       words within 2pt, worst 0.46pt baseline / 1.36pt pen); all 25 rules
       ink-verified (worst 0.24pt = 1px @300dpi); pixel diff 0.82% / 1.18%
       (target <3%); fonts embedded (Tahoma R/B, MS-Gothic); 2x A4.
