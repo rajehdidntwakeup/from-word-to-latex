@@ -313,11 +313,36 @@ from-word-to-latex/
 | `tabularx` stretching vs fixed grid | all columns are fixed-width `p{}`/`parbox` anyway — no stretching used |
 | Font licensing | fonts come from the user's own docx (embedded by FH-Burgenland); local personal-use rendering only — no redistribution |
 
+### LaTeX-specific gotchas discovered during Phase 2 (all fixed, keep for reference)
+
+- **TeX pt ≠ PDF bp.** Word measurements and pdftotext output are in PDF
+  points (bp, 72/in). TeX `pt` is 72.27/in → a −0.36% *gradient* across the
+  page. Use `bp` everywhere: `\fontsize{10bp}{12.07bp}`, `\rule{…bp}`,
+  `\setlength{\unitlength}{1bp}`. Symptom: errors growing linearly with
+  distance from origin.
+- **`\rule` grows UP from its anchor** (reference point = bottom-left). To
+  place a rule whose top edge is at depth d with thickness t, put its bottom
+  at d+t: `\put(x,-(d+t)){\rule{w}{t}}`.
+- **pdftotext word boxes are layout line boxes**, not ink. baseline =
+  yMin + k·(yMax−yMin) with renderer-specific k (LibreOffice Tahoma ≈ 0.829,
+  XeTeX ≈ 0.741, MS Gothic ≈ 0.859). `qa_diff.py` converts to baselines
+  before comparing.
+- **Flow-mode anchoring (topskip/baselineskip) is unreliable** for
+  exact-placement work — shipout-layer (`eso-pic` + `\AtPageUpperLeft`) is
+  deterministic and matches the footer/logo mechanism.
+- **A `\put` outside a picture environment silently typesets nothing**
+  (no log error). Always wrap content macros in `\AtPageUpperLeft{…}`.
+- **Frame anchor** (shipout layer, bp): origin = (63, −126.40) from the page
+  top-left — 63 = left rule center x; 125.95 = Word top margin, +0.45
+  empirical correction.
+
 ## 9. Execution checklist
 
 - [x] Phase 0 — extract & validate fonts, crop logo, generate reference PDF/PNGs, measure everything (this document)
-- [ ] Phase 1 — `ansuchen.tex` skeleton: geometry, fonts, logo, footer, page numbering; compile clean
-- [ ] Phase 2 — T0 + T1 with exact columns/heights; QA pass on their region
+- [x] Phase 1 — `ansuchen.tex` skeleton: geometry, fonts, logo, footer, page numbering; compile clean
+- [x] Phase 2 — T0 + T1 with exact columns/heights; QA pass on their region
+      (0/94 words beyond 2pt, worst 0.76pt; rules within ±0.24pt; shipout-layer
+      absolute placement, bp units, baseline-aware qa_diff)
 - [ ] Phase 3 — T2 (indents, checkboxes, inline footnote) + T3 (merges)
 - [ ] Phase 4 — page-2 headings + T4 fixed-pitch rows
 - [ ] Phase 5 — full QA loop (bbox + pixel diff), fix deviations, final report

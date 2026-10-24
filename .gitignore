@@ -12,6 +12,7 @@ latex/fonts/
 *.pdf
 !_inspect/*.pdf
 latex/mine-*.png
+latex/myhires-*.png
 latex/_dbg.*
 
 # unpacked docx (redundant — everything is inside the committed .docx)
