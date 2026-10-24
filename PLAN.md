@@ -349,4 +349,12 @@ from-word-to-latex/
       their rows (merged-cell geometry); anchor fixed to true -125.95 Word
       top margin; superscript ¹ placed at 5.79bp explicit font size
 - [ ] Phase 4 — page-2 headings + T4 fixed-pitch rows
+      ✅ DONE: page-2 headings at measured depths (38.50/59.15); T4 = 9
+      rules of 0.5pt (plain Table Grid style, NO tblBorders override — unlike
+      T0-T3's 1.5pt frames) on an exact 66.10pt grid starting 69.40; 8 bold
+      labels at x=5.10, depths 85.55+i*66.10; side borders 0.5pt
 - [ ] Phase 5 — full QA loop (bbox + pixel diff), fix deviations, final report
+      ✅ DONE (see current status below): qa_diff --strict PASS (191/191
+      words within 2pt, worst 0.46pt baseline / 1.36pt pen); all 25 rules
+      ink-verified (worst 0.24pt = 1px @300dpi); pixel diff 0.82% / 1.18%
+      (target <3%); fonts embedded (Tahoma R/B, MS-Gothic); 2x A4.
