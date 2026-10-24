@@ -1,0 +1,227 @@
+{
+ "sections": [
+  {
+   "index": 0,
+   "page_width_cm": 21.0,
+   "page_height_cm": 29.7,
+   "left_margin_cm": 2.2,
+   "right_margin_cm": 2.2,
+   "top_margin_cm": 4.44,
+   "bottom_margin_cm": 2.25,
+   "header_distance_cm": 1.25,
+   "footer_distance_cm": 1.19,
+   "orientation": "PORTRAIT (0)",
+   "different_first_page_header": false,
+   "header_text": "",
+   "footer_text": "\t\t3/3\nLE0400_DEPI_V_01 Ansuchen Zuteilung wiss Arbeit\t\tPQMS\nKP01 – Studium & Lehre\t\t\tVersion 1.1 - zuletzt geändert: 19.11.2024/hos\nerstellt: 09.03.2022/frn\tgeprüft: 09.03.2022/buc\tfreigegeben: 19.11.2024/buc",
+   "first_page_header_text": "",
+   "first_page_footer_text": ""
+  }
+ ],
+ "paragraphs": [
+  {
+   "i": 0,
+   "style": "Normal",
+   "line_spacing": "14605",
+   "text": "Ansuchen um Zuteilung einer wissenschaftlichen Arbeit",
+   "runs": [
+    {
+     "text": "Ansuchen um Zuteilung ",
+     "bold": true,
+     "size_pt": 12.0,
+     "font": "Tahoma"
+    },
+    {
+     "text": "einer ",
+     "bold": true,
+     "size_pt": 12.0,
+     "font": "Tahoma"
+    },
+    {
+     "text": "wissenschaftl",
+     "bold": true,
+     "size_pt": 12.0,
+     "font": "Tahoma"
+    },
+    {
+     "text": "ichen",
+     "bold": true,
+     "size_pt": 12.0,
+     "font": "Tahoma"
+    },
+    {
+     "text": " Arbeit",
+     "bold": true,
+     "size_pt": 12.0,
+     "font": "Tahoma"
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "style": "Normal",
+   "line_spacing": "14605",
+   "text": "Department Informationstechnologie",
+   "runs": [
+    {
+     "text": "Department Informationstechnologie",
+     "size_pt": 10.0,
+     "font": "Tahoma"
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "style": "Normal",
+   "space_after_pt": 0.0,
+   "line_spacing": "14605"
+  },
+  {
+   "i": 3,
+   "style": "Normal",
+   "space_after_pt": 0.0,
+   "line_spacing": "14605"
+  },
+  {
+   "i": 4,
+   "style": "Normal",
+   "space_after_pt": 0.0
+  },
+  {
+   "i": 5,
+   "style": "Normal",
+   "space_after_pt": 10.0,
+   "line_spacing": "1.15"
+  },
+  {
+   "i": 6,
+   "style": "Normal",
+   "space_before_pt": 6.0,
+   "line_spacing": "1.15",
+   "text": "Themendisposition ",
+   "runs": [
+    {
+     "text": "Themendisposition ",
+     "bold": true,
+     "size_pt": 12.0
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "style": "Normal",
+   "space_before_pt": 6.0,
+   "line_spacing": "1.15",
+   "text": "Ausführliche Darstellung der eingereichten Fragestellung (2-3 Seiten)",
+   "runs": [
+    {
+     "text": "Ausführliche Darstellung der eingereichten Fragestellung (2-3 Seiten)",
+     "size_pt": 10.0
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "style": "Normal",
+   "space_after_pt": 0.0
+  }
+ ],
+ "tables": [
+  {
+   "index": 0,
+   "style": "Table Grid",
+   "n_rows": 1,
+   "n_cols": 1,
+   "grid": [
+    [
+     "Bitte wählen: \n Bachelorarbeit \t BIMK\t BITI\t\t BSWE\t BWIF\n Masterarbeit\t\t MASE\t MBPM\t MCCE\t MDMK\t MEWM"
+    ]
+   ]
+  },
+  {
+   "index": 1,
+   "style": "Table Grid",
+   "n_rows": 2,
+   "n_cols": 2,
+   "grid": [
+    [
+     "Name der/des Studierenden:\n",
+     "PKZ:"
+    ],
+    [
+     "\n\nDatum",
+     "Unterschrift"
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "style": "Table Grid",
+   "n_rows": 2,
+   "n_cols": 1,
+   "grid": [
+    [
+     "ersucht um Zuteilung einer wissenschaftlichen Arbeit mit dem Arbeitstitel (und Aufgabenbereich bei Gruppenarbeiten)\n\n"
+    ],
+    [
+     "Themenquelle:\n\t a) Vorschlag des/der Studierenden\nDie Bearbeitung der Fragestellung erfolgt in Kooperation oder steht in Verbindung mit einem externen Unternehmen oder einer externer Institution1\n\t ja\n\tnähere Angaben:\n\t\n\t\n\t\n\t nein\n\t b) Vorschlag des Studienganges\n\n1 Als externe Unternehmen oder externe Institutionen gelten alle Unternehmen oder Institutionen außer der Hochschule für Angewandte Wissenschaften Burgenland GmbH"
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "style": "Table Grid",
+   "n_rows": 3,
+   "n_cols": 3,
+   "grid": [
+    [
+     "Genehmigung durch die Studiengangsleitung",
+     "Genehmigung durch die Studiengangsleitung",
+     "Genehmigung durch die Studiengangsleitung"
+    ],
+    [
+     "Zugewiesene*r Betreuer*in:",
+     "",
+     ""
+    ],
+    [
+     "\n\nDatum",
+     "\n\nDatum",
+     "Unterschrift"
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "style": "Table Grid",
+   "n_rows": 8,
+   "n_cols": 1,
+   "grid": [
+    [
+     "Ausgangssituation & Problemhintergrund\n\n"
+    ],
+    [
+     "Wissenschaftliche Fragestellung\n\n"
+    ],
+    [
+     "Ziel sowie Nutzen der Arbeit\n\n"
+    ],
+    [
+     "Nicht-Ziele\n\n"
+    ],
+    [
+     "Forschungsmethodik\n\n"
+    ],
+    [
+     "Grobgliederung mit Seitenbudgets\n\n"
+    ],
+    [
+     "Zeitplan\n\n"
+    ],
+    [
+     "Bislang herangezogene Literatur\n\n"
+    ]
+   ]
+  }
+ ]
+}

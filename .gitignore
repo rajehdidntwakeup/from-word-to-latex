@@ -1,0 +1,23 @@
+# virtualenv
+.venv/
+
+# extracted fonts — Microsoft/Monotype licensed, must not be redistributed.
+# Rebuild locally with: python3 scripts/extract_fonts.py
+latex/fonts/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.pdf
+!_inspect/*.pdf
+
+# unpacked docx (redundant — everything is inside the committed .docx)
+_inspect/word/
+_inspect/docProps/
+_inspect/customXml/
+_inspect/_rels/
+"\_inspect/\[Content_Types\].xml"
+
+# OS junk
+.DS_Store

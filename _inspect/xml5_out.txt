@@ -1,0 +1,191 @@
+##### TABLE 0 (Artenwahl) #####
+--- row0 cell0 ---
+  p0: spacing={'before': '120', 'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Bitte wählen:'
+     run: font=minorHAnsi 10pt ' '
+  p1: spacing={'before': '120', 'line': '23', 'lineRule': 'atLeast'}
+     run: font=Tahoma 10pt ' Bachelorarbeit '
+     run: '<TAB>'
+     run: font=Tahoma 10pt ' BIMK'
+     run: '<TAB>'
+     run: font=Tahoma 10pt ' BITI'
+     run: '<TAB>'
+     run: '<TAB>'
+     run: font=Tahoma 10pt ' BSWE'
+     run: '<TAB>'
+     run: font=Tahoma 10pt ' '
+     run: font=Tahoma 10pt 'BWIF'
+  p2: spacing={'before': '120', 'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt ' Masterarbeit'
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' '
+     run: font=minorHAnsi 10pt 'MASE'
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' MBPM'
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' MCCE'
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' MDMK'
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' MEWM'
+
+##### TABLE 1 (Name/PKZ/Datum/Unterschrift) #####
+--- row0 cell0 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Name der/des Studierenden:'
+  p1: spacing={'line': '23', 'lineRule': 'atLeast'}
+--- row0 cell1 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'PKZ:'
+--- row1 cell0 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+  p1: spacing={'line': '23', 'lineRule': 'atLeast'}
+  p2: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Datum'
+--- row1 cell1 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Unterschrift'
+
+##### TABLE 2 (Arbeitstitel/Themenquelle) #####
+--- row0 cell0 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'ersucht um Zuteilung einer wissenschaftlichen Arbeit mit dem Arbeitstitel (und Aufgabenbereich bei Gruppenarbeiten)'
+  p1: spacing={'line': '23', 'lineRule': 'atLeast'}
+  p2: spacing={'line': '23', 'lineRule': 'atLeast'}
+--- row1 cell0 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Themenquelle:'
+  p1: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' a)'
+     run: font=minorHAnsi 10pt ' '
+     run: font=minorHAnsi 10pt 'Vorschlag des/der Studierenden'
+  p2: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.54320987654321}
+     run: font=minorHAnsi 10pt 'Die Bearbeitung der Fragestellung erfolgt in Kooperation oder steht in Verbindung mit einem externen Unternehmen oder einer externer Institution'
+     run: font=minorHAnsi 10pt vert=superscript '1'
+  p3: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.7918871252204585}
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' ja'
+  p4: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.7918871252204585}
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt 'nähere Angaben:'
+  p5: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.7918871252204585}
+     run: font=minorHAnsi 10pt '<TAB>'
+  p6: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.7918871252204585}
+     run: font=minorHAnsi 10pt '<TAB>'
+  p7: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.7918871252204585}
+     run: font=minorHAnsi 10pt '<TAB>'
+  p8: spacing={'line': '23', 'lineRule': 'atLeast'} ind={'left': 2.7918871252204585}
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' nein'
+  p9: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt '<TAB>'
+     run: font=minorHAnsi 10pt ' b) Vorschlag des Studienganges'
+  p10: spacing={'line': '23', 'lineRule': 'atLeast'}
+  p11: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt vert=superscript '1'
+     run: font=minorHAnsi 10pt ' Als externe Unternehmen oder externe Institutionen gelten alle Unternehmen oder Institutionen außer der '
+     run: font=minorHAnsi 10pt 'Hochschule für Angewandte Wissenschaften'
+     run: font=minorHAnsi 10pt ' Burgenland GmbH'
+
+##### TABLE 3 (Genehmigung) #####
+--- row0 cell0 (span 3) ---
+  p0: spacing={'before': '120', 'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi b 10pt 'Genehmigung durch die Studiengangsleitung'
+--- row1 cell0 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Zugewiesene*r Betreuer*in:'
+--- row1 cell1 (span 2) ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+--- row2 cell0 (span 2) ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+  p1: spacing={'line': '23', 'lineRule': 'atLeast'}
+  p2: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Datum'
+--- row2 cell1 ---
+  p0: spacing={'line': '23', 'lineRule': 'atLeast'}
+     run: font=minorHAnsi 10pt 'Unterschrift'
+
+##### TABLE 4 (Themendisposition) #####
+--- row0 cell0 ---
+  p0: spacing={'before': '120', 'line': '276', 'lineRule': 'auto'}
+     run: font=minorHAnsi b 10pt 'Ausgangssituation & Problemhintergrund'
+  p1: spacing={'before': '120', 'line': '276', 'lineRule': 'auto'}
+  p2: spacing={'before': '120', 'line': '276', 'lineRule': 'auto'}
+--- row1 cell0 ---
+  p0: spacing={'before': '120', 'line': '276', 'lineRule': 'auto'}
+     run: font=minorHAnsi b 10pt 'Wissenschaftliche Fragestellung'
+  p1: spacing={'before': '120', 'line': '276', 'lineRule': 'auto'}
+  p2: spacing={'before': '120', 'line': '276', 'lineRule': 'auto'}
+
+##### BODY PARAGRAPHS #####
+--- body p0 ---
+   run: font=Tahoma b 12pt 'Ansuchen um Zuteilung '
+   run: font=Tahoma b 12pt 'einer '
+   run: font=Tahoma b 12pt 'wissenschaftl'
+   run: font=Tahoma b 12pt 'ichen'
+   run: font=Tahoma b 12pt ' Arbeit'
+--- body p1 ---
+   run: font=Tahoma 10pt 'Department Informationstechnologie'
+--- body p6 ---
+   run: font=minorHAnsi b 12pt 'Themendisposition '
+--- body p7 ---
+   run: font=minorHAnsi 10pt 'Ausführliche Darstellung der eingereichten Fragestellung (2-3 Seiten)'
+
+##### header1.xml.rels #####
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image2.svg"/><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image1.png"/></Relationships>
+
+##### HEADER ANCHOR (cleaned) #####
+<wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0" relativeHeight="251658239" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1" wp14:anchorId="0D1CF612" wp14:editId="2B18D9F8">
+  <wp:simplePos x="0" y="0"/>
+  <wp:positionH relativeFrom="column">
+    <wp:posOffset>-1010366</wp:posOffset>
+  </wp:positionH>
+  <wp:positionV relativeFrom="paragraph">
+    <wp:posOffset>-1263650</wp:posOffset>
+  </wp:positionV>
+  <wp:extent cx="3564000" cy="3564000"/>
+  <wp:effectExtent l="0" t="0" r="0" b="0"/>
+  <wp:wrapNone/>
+  <wp:docPr id="1" name="Grafik 1"/>
+  <wp:cNvGraphicFramePr>
+    <a:graphicFrameLocks noChangeAspect="1"/>
+  </wp:cNvGraphicFramePr>
+  <a:graphic>
+    <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+      <pic:pic>
+        <pic:nvPicPr>
+          <pic:cNvPr id="1" name=""/>
+          <pic:cNvPicPr/>
+        </pic:nvPicPr>
+        <pic:blipFill>
+          <a:blip r:embed="rId1">
+            <a:extLst>
+              <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                <a14:useLocalDpi val="0"/>
+              </a:ext>
+              <a:ext uri="{96DAC541-7B7A-43D3-8B79-37D633B846F1}">
+                <asvg:svgBlip r:embed="rId2"/>
+              </a:ext>
+            </a:extLst>
+          </a:blip>
+          <a:stretch>
+            <a:fillRect/>
+          </a:stretch>
+        </pic:blipFill>
+        <pic:spPr>
+          <a:xfrm>
+            <a:off x="0" y="0"/>
+            <a:ext cx="3564000" cy="3564000"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+        </pic:spPr>
+      </pic:pic>
+    </a:graphicData>
+  </a:graphic>
+</wp:anchor>
+

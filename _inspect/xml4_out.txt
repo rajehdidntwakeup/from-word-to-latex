@@ -1,0 +1,108 @@
+===== TABLE 0 tblPr =====
+<tblPr {}>
+  <tblStyle {'val': 'Tabellenraster'}>
+  <tblW {'w': '0', 'type': 'auto'}>
+  <tblBorders {}>
+    <top {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <left {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <bottom {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <right {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <insideH {'val': 'none', 'color': 'auto', 'sz': '0', 'space': '0'}>
+    <insideV {'val': 'none', 'color': 'auto', 'sz': '0', 'space': '0'}>
+  <tblLook {'val': '04A0', 'firstRow': '1', 'lastRow': '0', 'firstColumn': '1', 'lastColumn': '0', 'noHBand': '0', 'noVBand': '1'}>
+  grid: [16.55]
+  -- first cell tcPr --
+  <tcPr {}>
+    <tcW {'w': '9402', 'type': 'dxa'}>
+    <tcMar {}>
+
+===== TABLE 1 tblPr =====
+<tblPr {}>
+  <tblStyle {'val': 'Tabellenraster'}>
+  <tblW {'w': '0', 'type': 'auto'}>
+  <tblBorders {}>
+    <top {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <left {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <bottom {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <right {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+  <tblLook {'val': '04A0', 'firstRow': '1', 'lastRow': '0', 'firstColumn': '1', 'lastColumn': '0', 'noHBand': '0', 'noVBand': '1'}>
+  grid: [8.27, 8.27]
+  -- first cell tcPr --
+  <tcPr {}>
+    <tcW {'w': '4701', 'type': 'dxa'}>
+
+===== TABLE 2 tblPr =====
+<tblPr {}>
+  <tblStyle {'val': 'Tabellenraster'}>
+  <tblW {'w': '0', 'type': 'auto'}>
+  <tblBorders {}>
+    <top {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <left {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <bottom {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <right {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+  <tblLook {'val': '04A0', 'firstRow': '1', 'lastRow': '0', 'firstColumn': '1', 'lastColumn': '0', 'noHBand': '0', 'noVBand': '1'}>
+  grid: [16.55]
+  -- first cell tcPr --
+  <tcPr {}>
+    <tcW {'w': '9402', 'type': 'dxa'}>
+
+===== TABLE 3 tblPr =====
+<tblPr {}>
+  <tblStyle {'val': 'Tabellenraster'}>
+  <tblW {'w': '0', 'type': 'auto'}>
+  <tblBorders {}>
+    <top {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <left {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <bottom {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+    <right {'val': 'single', 'color': 'auto', 'sz': '12', 'space': '0'}>
+  <tblLook {'val': '04A0', 'firstRow': '1', 'lastRow': '0', 'firstColumn': '1', 'lastColumn': '0', 'noHBand': '0', 'noVBand': '1'}>
+  grid: [4.98, 3.29, 8.27]
+  -- first cell tcPr --
+  <tcPr {}>
+    <tcW {'w': '9382', 'type': 'dxa'}>
+    <gridSpan {'val': '3'}>
+  -- row 1 trPr --
+  <trPr {}>
+    <trHeight {'val': '264'}>
+  -- row 2 trPr --
+  <trPr {}>
+    <trHeight {'val': '263'}>
+
+===== TABLE 4 tblPr =====
+<tblPr {}>
+  <tblStyle {'val': 'Tabellenraster'}>
+  <tblW {'w': '0', 'type': 'auto'}>
+  <tblLook {'val': '04A0', 'firstRow': '1', 'lastRow': '0', 'firstColumn': '1', 'lastColumn': '0', 'noHBand': '0', 'noVBand': '1'}>
+  grid: [16.58]
+  -- first cell tcPr --
+  <tcPr {}>
+    <tcW {'w': '9402', 'type': 'dxa'}>
+
+===== SECTPR =====
+<sectPr {'rsidRPr': '00EB2908', 'rsidR': '00903281', 'rsidSect': '00A746DA'}>
+  <headerReference {'type': 'default', 'id': 'rId8'}>
+  <footerReference {'type': 'default', 'id': 'rId9'}>
+  <pgSz {'w': '11906', 'h': '16838', 'orient': 'portrait'}>
+  <pgMar {'top': '2516', 'right': '1247', 'bottom': '1276', 'left': '1247', 'header': '709', 'footer': '676', 'gutter': '0'}>
+  <cols {'space': '708'}>
+  <docGrid {'linePitch': '360'}>
+
+===== TABLE 4 ROW CELLS: paragraph counts =====
+ row 0: 3 paras, nonempty=1, first='Ausgangssituation & Problemhintergrund', sample=['Ausgangssituation & Problemhintergrund', '(empty)', '(empty)']
+ row 1: 3 paras, nonempty=1, first='Wissenschaftliche Fragestellung', sample=['Wissenschaftliche Fragestellung', '(empty)', '(empty)']
+ row 2: 3 paras, nonempty=1, first='Ziel sowie Nutzen der Arbeit', sample=['Ziel sowie Nutzen der Arbeit', '(empty)', '(empty)']
+ row 3: 3 paras, nonempty=1, first='Nicht-Ziele', sample=['Nicht-Ziele', '(empty)', '(empty)']
+ row 4: 3 paras, nonempty=1, first='Forschungsmethodik', sample=['Forschungsmethodik', '(empty)', '(empty)']
+ row 5: 3 paras, nonempty=1, first='Grobgliederung mit Seitenbudgets', sample=['Grobgliederung mit Seitenbudgets', '(empty)', '(empty)']
+ row 6: 3 paras, nonempty=1, first='Zeitplan', sample=['Zeitplan', '(empty)', '(empty)']
+ row 7: 3 paras, nonempty=1, first='Bislang herangezogene Literatur', sample=['Bislang herangezogene Literatur', '(empty)', '(empty)']
+
+===== SPECIAL CHARACTERS (non-ASCII) =====
+  U+00DF 'ß': x1
+  U+00E4 'ä': x2
+  U+00FC 'ü': x2
+  U+2610 '☐': x15
+
+===== MEDIA =====
+  image1.png: (2268, 2268) px, mode=RGBA, dpi=(383.99719999999996, 383.99719999999996)
+  image2.svg head: '<svg version="1.1" viewBox="0 0 566.93 566.93" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Ebene_1" overflow="hidden"><defs></defs><g><path d=" M 232.88 250.94 L '
